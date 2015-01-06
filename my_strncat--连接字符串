@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+void my_strncat(char*s1,char*s2,int a)
+{
+int c,i=0;
+while(s1[i]!='\0')
+{
+i++;
+}
+for(c=0;c<a;c++)
+{
+s1[i]=s2[c];
+i++;
+}
+s1[i] = '\0';
+printf("%s",s1);
+}
+
+int main()
+{
+char s3[50];
+char s4[30];
+int b;
+scanf("%s",s3);
+scanf("%s",s4);
+scanf("%d",&b);
+my_strncat(s3,s4,b);
+return 0;
+}
+
+
+
