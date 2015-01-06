@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+char a[30];
+int i;
+for(i=0;(a[i]=getchar())!='\n';i++);
+printf("%s\n",a);
+return 0;
+}   
