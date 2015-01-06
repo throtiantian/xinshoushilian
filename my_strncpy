@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void my_strncpy(char *s1,char *s2,int a)
+{
+int i;
+for(i=0;i<a;i++)
+{
+s1[i]=s2[i];    
+ }
+s1[a]='\0';
+printf("%s\n",s1);
+}
+
+int main()
+{
+char s3[50];
+char s4[20];
+int b;
+scanf("%s",s4);
+scanf("%d",&b);
+my_strncpy(s3,s4,b);
+return 0;
+}
+
